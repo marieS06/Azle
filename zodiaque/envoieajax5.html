@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+             <meta charset = "utf-8">
+                <title>ma page</title>
+                  <link rel="stylesheet"type="text/css" href="">
+                    </head>
+ <body>
+    <header>
+       <h1> En tete sur la largeur de la page,le logo du site le titre de la page la nav sera en dessous du menu </h1>
+          </header>
+ <nav><h2> boutons menu liens d'onglet comme l'entete la barre de nav reste coherente d'une page a l'autre </h2> 
+    <ul>
+        <li><a href="">Acceuil</a></li>
+        <li></li>
+        <li></li>
+    </ul>
+ 
+
+       
+
+ </nav>
+    </header>
+
+ <main>
+
+    <select form="genre" id="selectiongenre" autofocus>
+        <option value="M">Homme</option>
+        <option value="F">Femme</option>
+        <option value="X">indeterminé</option>
+        
+    </select> 
+    <p><input type="text" id="point"></p>
+    <input type="button" id="totalpoint" value="vos points"/>
+
+
+
+ </main>
+        
+
+ <footer> droit d'auteur
+
+ </footer>
+<script>
+const button=document.getElementById("totalpoint");
+     button.addEventListener("click",event => {
+
+
+var toto = document.getElementById("selectiongenre");
+var tata =document.getElementById("point");
+var selection = toto.options[toto.selectedIndex].value;
+tata.innerHTML = selection;
+
+     });
+
+</script>
+ </body>
+ </html>

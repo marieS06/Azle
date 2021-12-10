@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <meta charset = "utf-8">
+             <head>
+    <link rel="stylesheet" href="envoiajax.css">
+<title>astro</title>
+     </head>
+     <body>
+           <header>
+               <div class= "pois">
+                <h2><span class="moi">***</span>quizz astro<span class="moi">***</span></h2>
+                <nav>
+                    <ul>
+                    <li><a href="#voir">horoscope</a></li>
+                    <li><a href="#as">quizz</a></li>
+                    <li><a href="#toto">contact</a></li>
+                    </ul>
+                    </nav>    
+               </div>
+           </header>
+    
+           <section id="mage">
+               <div class="pois">
+                   <h4>bienvenue sur<br><strong>astro quizz</strong></h4>
+                   <a href class="button1">commencer</a>
+               </div>
+           </section>
+           
+                <section id="titi">
+                             <div class="pois">
+                             <ul>
+                        <li id="un">
+                            <h5>horoscope</h5>
+                            <p>votre horoscope en temps réel : vos amours,vos finances,votre travail...</p>
+                        </li>
+                        <li id="deux">
+                            <h5>quizz</h5>
+                            <p>votre quizz du jour : amours, finances,travail...</p>
+                        </li>
+                        <li id="trois">
+                            <h5>contact</h5>
+                            <p>votre avenir en temps réel avec les meilleurs voyants</p>
+                        </li>
+                            <div class="clear"></div>
+                            </ul>
+                 
+                    
+                        
+                        <table>
+                                <h3>
+                                    1) Vous l'aimez ! vous
+                                    attendez qu'il ou qu'elle soit votre....
+                                </h3>
+                                <input type="radio" value='2' name="question1" checked> guide
+                                <input type="radio" value='1' name="question1"> admirateur
+                                <input type="radio" value='3' name="question1"> défenseur
+                                <input type="radio" value='4' name="question1"> nounours
+                                <h3>
+                                    2)L'extrême sensibilité, chez une personne,
+                                    cela représente pour vous une preuve....
+                                </h3>
+                                <input type="radio" value='2'name="question2" checked> de fragilité
+                                <input type="radio" value='3'name="question2"> d'intelligence
+                                <input type="radio" value='1'name="question2"> de manque d'assurance
+                                <input type="radio" value='4'name="question2"> de créativité
+                                <h3>
+                                    3) Une soirée sous le signe du romantisme,
+                                    vous la voyez plutôt se dérouler....
+                                </h3>
+                                <input type="radio" value='4'name="question3"checked> sur la plage, sous les étoiles.
+                                <input type="radio" value='3'name="question3"> au restaurant et aux chandelles.
+                                <input type="radio" value='1'name="question3"> dans une boîte de nuit sympa.
+                                <input type="radio" value='2'name="question3"> n'importe où, pourvu que vous soyez seuls.
+                                <h3>
+                                    4) Dans votre couple, ce que vous trouveriez le plus difficile à subir ce serait...
+                                </h3>
+                                <input type="radio" value='4'name="question4"checked> l'infidélité
+                                <input type="radio" value='1'name="question4"> le mensonge
+                                <input type="radio" value='2'name="question4"> l'indifférence
+                                <input type="radio" value='3'name="question4"> l'autorité
+                                <h3>
+                                    5) D'un point de vue amour, votre devise serait plutôt...
+                                    </br></h3>
+                                <input type="radio" value='1'name="question5"checked> "on n'en parle pas, mais on le fait !"
+                                <input type="radio" value='4'name="question5"> "un peu, mais pas trop."
+                                <input type="radio" value='2'name="question5"> "encore, encore, encore!"
+                                <input type="radio" value='3'name="question5"> "chaque fois est une première fois"
+                                <h3>
+                                    6) Les hommes ou les femmes que vous avez aimés dans le passé étaient....
+                                </h3>
+                                <input type="radio" value='1'name="question6"checked> tous du même style
+                                <input type="radio" value='3'name="question6"> tous différents
+                                <input type="radio" value='4'name="question6"> pas assez nombreux pour généraliser
+                                <input type="radio" value='2'name="question6"> trop nombreux pour généraliser !
+                                <h3>
+                                    7) Etre amoureux, ça a tendance à vous rendre....
+                                    </br></h3>
+                                <input type="radio" value='4'name="question7"checked> sensuelle
+                                <input type="radio" value='1'name="question7"> féroce
+                                <input type="radio" value='3'name="question7"> philosophe
+                                <input type="radio" value='4'name="question7"> dynamique
+                                <h3>
+                                    8) L'horoscope de la semaine vous recommande de ne pas mettre le nez dehors. Vous décidez....
+                                    </br></h3>
+                                <input type="radio" value='2'name="question8"checked> de demander un congé pour rester chez vous
+                                <input type="radio" value='1'name="question8"> de braver le destin, comme si de rien n'était !
+                                <input type="radio" value='3'name="question8" >d'agir avec vigilance pendant la période néfaste
+                                <input type="radio" value='4'name="question8"> d'accepter avec résolution la catastrophe à venir.
+                                <h3>
+                                    9) Si vous aviez fait carrière dans un domaine artistique, vous auriez choisi...
+                                    </br></h3>
+                                <input type="radio" value='4'name="question9"checked> la musique
+                                <input type="radio" value='2'name="question9" >la peinture
+                                <input type="radio" value='3'name="question9"> la littérature
+                                <input type="radio" value='1'name="question9"> le cinéma
+
+
+                               
+
+         <section id="contact">
+             <div class="marie">
+               <h3>contactez nous</h3> 
+                <p> rentrer vos informations :</p>
+                <form><label for="name">Nom</label>
+                <input type="text" id="name" placeholder="votre nom">
+
+                <label for="mail">mail</label>
+                <input type="text" id="mail" placeholder="votre email">
+                <input type="submit"value="valider"class="button3">
+            
+            
+         
+           <!-- </div>
+         </section>
+        <section id="jeu">
+         <div class="case"><div class="base" draggable="true"></div></div>
+           <div class="case"></div>     
+           <div class="case"></div>  
+           <div class="case"></div>  
+        </section> -->
+    </form>
+
+    
+
+
+
+    
+            <p id = "voir"></p>
+            <div id="as"></div>  
+           <button type="button" class="button3" id="didi"onclick="loadDoc()">vos resultats</button>
+            </div>  
+            <p id="toto"></p>
+            <button type="button" class="button3" id="dodo"onclick="lancerune()">les runes</button>
+            <p id="rune"></p>
+            <button type="button" class="button3" id="imagerune"onclick="imane()">image runes</button>
+            <p id="runelimage"></p>
+            <button type="button" onclick="request(readData);">vos resultats</button>
+            <a href="index.jpg"><button type="button" class="button3" id="horoscope">horoscope</button>
+           </a>
+
+    </form>
+</div>
+</section>
+
+
+    </table>
+
+           <footer><div class="fin">
+            <h1><span class="moi">***</span>quizz astro<span class="moi">***</span></h1>
+            <div class="copyright">copyright 2020 tout droit reservés.</div>
+           </div></footer>               
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+
+function getXMLHttpRequest() {
+            var xhr = null;
+            if (window.XMLHttpRequest || window.ActiveXObject) {
+            if (window.ActiveXObject) {
+            try {
+            xhr = new ActiveXObject("Msxml2.XMLHTTP");
+            } catch(e) {
+            xhr = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            } else {
+            xhr = new XMLHttpRequest();
+            }
+            } else {
+            alert("Votre navigateur ne supporte pas l'objet XMLHTTPRequest...");
+            return null;
+            }
+            return xhr;
+            }
+            
+            function request(callback) {
+            var xhr = getXMLHttpRequest();
+            xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+            callback(xhr.responseXML);
+            }
+            };
+            xhr.open("GET", "rune.xml", true);
+            xhr.send(null);
+            }
+            
+            function readData(oData) {
+            
+            var Rune = ["Fehu", "Ūruz","Þurisaz","Ansuz","Raidō","Kaunan","Gebō","Wunjō","Hagalaz","Nauđiz","Īsaz","Jēra","Ihwaz","Perþō","Algiz","Sōwilō","Tīwaz","Berkanan","Ehwaz","Mannaz","Laguz","Ingwaz","Dagaz","Ōþalan"]
+            // var nombre = Math.floor(Math.random()*24)
+            var nombre = 0
+            
+            var rune = oData.getElementsByTagName("rune");
+            
+            var name = rune[nombre].getAttribute("name")
+            var img_url = rune[nombre].getAttribute("imgurl")
+            var description = rune[nombre].getAttribute("description")
+            
+            
+            document.getElementById("toto").innerHTML = rune.length 
+            + " "+Rune[nombre] +"<br>"+name+"<br>"+img_url+"<br>"+description;
+            }
+    
+      function getRandomInt(min, max) {
+          
+        return min + Math.floor(Math.random() * Math.floor(max+1));
+}
+    function lancerune() {
+
+        var Rune = ["Fehu", "Ūruz","Þurisaz","Ansuz","Raidō","Kaunan",
+        "Gebō","Wunjō","Hagalaz","Nauđiz","Īsaz","Jēra","Ihwaz","Perþō",
+        "Algiz","Sōwilō","Tīwaz","Berkanan","Ehwaz","Mannaz","Laguz","Ingwaz","Dagaz","Ōþalan"]
+
+        var index = getRandomInt(0,23)
+        document.getElementById("rune").innerHTML=Rune[index]
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+   function calcul_somme(radio, resultat)
+{
+    for (var i=0; i<radio.length;i++)
+{
+    valeur = parseInt( radio[i].value );
+    resultat += radio[i].checked * valeur
+}
+    return resultat
+}
+    function loadDoc()
+{
+    var resultat = 0
+
+var radioquestion1 = document.getElementsByName('question1');
+var radioquestion2 = document.getElementsByName('question2');
+var radioquestion3 = document.getElementsByName('question3');
+var radioquestion4 = document.getElementsByName('question4');
+var radioquestion5 = document.getElementsByName('question5');
+var radioquestion6 = document.getElementsByName('question6');
+var radioquestion7 = document.getElementsByName('question7');
+var radioquestion8 = document.getElementsByName('question8');
+var radioquestion9 = document.getElementsByName('question9');
+resultat = calcul_somme(radioquestion1, resultat);
+resultat = calcul_somme(radioquestion2, resultat);
+resultat = calcul_somme(radioquestion3, resultat);
+resultat = calcul_somme(radioquestion4, resultat);
+resultat = calcul_somme(radioquestion5, resultat);
+resultat = calcul_somme(radioquestion6, resultat);
+resultat = calcul_somme(radioquestion7, resultat);
+resultat = calcul_somme(radioquestion8, resultat);
+resultat = calcul_somme(radioquestion9, resultat);
+
+if (resultat<16) {
+
+    var myurl = 'text1.txt';
+
+}else if (resultat<23) {
+
+    var myurl = 'text2.txt';
+
+}else if (resultat<30) {
+
+    var myurl = 'text3.txt';
+
+}else { var myurl = 'text4.txt';}
+
+
+    
+    $ ('#as').click(function() { $.ajax })
+
+    var xhttp = new XMLHttpRequest();
+
+    xhttp.onreadystatechange = function()
+{
+    if (this.readyState == 4 && this.status == 200)
+{
+    document.getElementById("toto").innerHTML = this.responseText;
+
+}
+};
+    xhttp.open("GET", myurl, true);
+    xhttp.send()
+}
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+         </script> 
+    </body>
+</html>

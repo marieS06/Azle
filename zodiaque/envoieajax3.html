@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+             <meta charset = "utf-8">
+                <title>quizz2</title>
+                  <link rel="stylesheet"type="text/css" href="envoiajax.css">
+                    </head>
+                        <body>
+                            <header>
+                                <div class= "pois">
+                                    <h2><span class="moi">***</span>quizz astro<span class="moi">***</span></h2>
+                                    <nav>
+                                        <ul>
+                                        <li><a href="envoieajax4.html">horoscope</a></li>
+                                        <li><a href="envoieajax.html">acceuil</a></li>
+                                        <li><a href="envoieajax2.html">quizz</a></li>
+                                        </ul>
+                                        </nav>    
+                                   </div>
+                                </header>
+                                <main>
+            <form>   
+                <fieldset>
+                <p class="dejauncompte"><strong>déjà un compte ?</strong></p>  
+              
+                <p class="formulaireclient">                
+               <label for="emailclient"> votre mail <abbr title="required">*</abbr></label>                  
+               <input type="mail" id="emailclient" name="mailt@hotmail.com" 
+                placeholder="Ex : mailt@hotmail.com" minlength="5" maxlength="20" size="20"/>
+               <label for="speudoclient"> Votre mot de passe <abbr title="required">*</abbr></label>
+               <input type="pass" name="sp" id="pseudoclient" 
+               placeholder="Ex : Zozor" minlength="5" maxlength="20" size="20"/>
+               <input type="button" id="bout1" value="valider"/>
+                 </p> 
+
+                 <p class="dejauncompte"><strong>creer un compte ?</strong></p>  
+              
+                 <p class ="formulaireclient">                
+                <label>votre nom <abbr title="required">*</abbr></label>                  
+                <input name="rep3" id="nom"  placeholder="Ex : tinlor" oninput="this.value=this.value.replace(/\d/g, '')"
+                minlength="5" maxlength="20" size="20">
+                <label>Votre prenom <abbr title="required">*</abbr></label> 
+                <input name="rep3" id="prenom"  id="prenom" placeholder="Ex : marie" oninput="this.value=this.value.replace(/\d/g, '')"
+                minlength="3" maxlength="20" size="20"/>
+                 </p>
+              
+                 <p class ="formulaireclient">                
+                <label>votre adresse </label>                  
+                <input name="rep3" id="adresse" placeholder="Ex : route des genets"
+                minlength="2" maxlength="40" size="40"/>
+                <label>Votre code postal :</label>
+                <input name="rep3" id="postal" placeholder="Ex : 06060" oninput="this.value=this.value.replace(/[^\d]/g, '')" minlength="5" maxlength="5" size="8"/>
+                 </p> 
+
+                 <p class ="formulaireclient">                
+                    <label>votre ville </label>                  
+                    <input name="rep3" id="ville" placeholder="Ex : Paris" oninput="this.value=this.value.replace(/\d/g, '')"
+                     minlength="1" maxlength="20" size="20"/>
+                    <label>votre numéro de téléphone :</label>
+                    <input type="tel"  name="rep3" id="telephone" placeholder="Ex : 0606060606" oninput="this.value=this.value.replace(/[^\d]/g, '')"
+                    minlength="10" maxlength="15" size="15"/>
+                 </p> 
+
+                 <p class="formulaireclient">                
+                    <label> votre mail <abbr title="required">*</abbr></label>                  
+                    <input type="mail" id="speudo2" name="rep3" 
+                     placeholder="Ex : mailt@hotmail.com" minlength="5" maxlength="20" size="20"/>
+                     <label> Votre mot de passe <abbr title="required">*</abbr></label>
+                     <input type="password" name="rep3" id="pseu" 
+                     placeholder="Ex : Zozor" minlength="5" maxlength="20" size="20"/>
+                    <input type="button" id="correspondant" value="valider"/>
+                 </p>
+                
+                     
+                </fieldset>
+                <p>Les champs obligatoires sont suivis par un <strong><abbr title="required">*</abbr></strong>.</p>
+            </form> 
+                <p id="resultatclient">vos cordonnées sont :</p>
+                <p id="resultatclient2">vos cordonnées sont :</p>
+                <div id="demo">
+                    <button type="button" onclick="loadDoc()">recevoir mes infos</button>
+                  </div>
+            </main>
+
+            <footer><p class="quizz">
+
+                <small>2020 tout droit reservés.</small>
+                <span class="etoile">***</span>quizz astro<span class="etoile">***</span>
+                </p>
+            </footer>
+                </body>
+                            <script>    
+
+
+
+
+const button =document.getElementById("bout1");
+button.addEventListener('click',event => {
+var emailclient = document.getElementById("emailclient").value;
+var passclient = document.getElementById("pseudoclient").value;
+document.getElementById("resultatclient").innerHTML = emailclient + " " + passclient;
+}
+);
+
+/*const butt =document.getElementById("correspondant"); 
+butt.addEventListener('click',event => {
+var rep3 = document.getElementsByName("rep3");
+for (var i=0; i<rep3.length;i++)
+var par3 = rep3[i].value;
+/*var tot3 = rep3[i].checked + par3;*/
+/*var te = "votre nom est :" + "<br>" + "" + "votre prenom :" + "" + "<br>" + "votre adresse :" + "<br>"+ "votre code postal :" +
+"<br>" + "votre ville :" + "<br>" + "votre numéro de téléphone :" + "<br>" + "votre mail :" + "<br>" + "votre mot de passe :"; 
+document.getElementById("resultatclient2").innerHTML = par3;
+document.getElementById("resultatclient2").innerHTML;
+}
+);*/
+
+const butt =document.getElementById("correspondant");
+butt.addEventListener('click',event => {
+
+var nom = document.getElementById("nom").value;
+var prenom = document.getElementById("prenom").value;
+var adresse = document.getElementById("adresse").value;
+var postal = document.getElementById("postal").value;
+var ville = document.getElementById("ville").value;
+var telephone = document.getElementById("telephone").value;
+var mail = document.getElementById("speudo2").value;
+var pswd = document.getElementById("pseu").value;
+
+var te = "votre nom est :" +nom+ "<br>" + "" + "votre prenom :" +prenom+ "" + "<br>" + "votre adresse :" +adresse+"<br>"+ "votre code postal :" +postal+
+"<br>" + "votre ville :" +ville+"<br>" + "votre numéro de téléphone :" +telephone+"<br>" + "votre mail :" +mail+ "<br>" + "votre mot de passe :"+pswd;
+document.getElementById("resultatclient2").innerHTML = te;
+
+var all = document.getElementsByName("rep3");
+var draw2 = ""
+
+for(n=0;n<all.length;n++){
+
+var La_valeur_de_l_id = all[n].value
+draw2 = draw2 + La_valeur_de_l_id + "<br>"
+
+}
+document.getElementById("resultatclient2").innerHTML = document.getElementById("resultatclient2").innerHTML + "<br>" + draw2;
+
+}
+);
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "m.xml", true);
+  xhttp.send();
+}
+
+</script>
+</html>

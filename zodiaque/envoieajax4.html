@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <meta charset="utf-8">
+
+                <title>PAGE4</title>
+                <link rel="stylesheet" type="text/css" href="envoiajax.css">
+            </head>
+                <body>
+                    <header>
+                        <div class= "pois">
+                            <h2><span class="moi">***</span>astro<span class="moi">***</span></h2>
+                            <nav>
+                                <ul>
+                                <li><a href="envoieajax3.html">contact</a></li>
+                                <li><a href="envoieajax.html">acceuil</a></li>
+                                <li><a href="envoieajax2.html">quizz</a></li>
+                                </ul>
+                                </nav>    
+                           </div>
+                        </header>
+                        
+                    <section id="astrologique">
+                    <ul id="zoro"><p>quel est votre signe ?</p><br>
+                    <li><input type="checkbox"name="zodiaque"value="belier">   Belier : 21/03 au 20/04</li>
+                    <li><input type="checkbox"name="zodiaque"value="taureau">   Taureau : 21/04 au 20/05</li>
+                    <li><input type="checkbox"name="zodiaque"value="gemeaux">   Gémeaux : 21/05 au 21/06</li>
+                    <li><input type="checkbox"name="zodiaque"value="cancer">   Cancer : 22/06 au 22/07</li>
+                    <br>
+                    <li><input type="checkbox"name="zodiaque"value="lion">   Lion : 23/07 au 22/08</li>
+                    <li><input type="checkbox"name="zodiaque"value="vierge">   Vierge : 23/09 au 22/09</li>
+                    <li><input type="checkbox"name="zodiaque"value="balance">   Balance : 23/09 au 22/10</li>
+                    <li><input type="checkbox"name="zodiaque"value="scorpion">   Scorpion : 23/10 au 22/11</li>
+                    <br> 
+                    <li><input type="checkbox"name="zodiaque"value="sagittaire">   Sagittaire : 23/11 au 21/12</li>
+                    <li><input type="checkbox"name="zodiaque"value="capricorne">   Capricorne : 22/12 au 20/01</li>
+                    <li><input type="checkbox"name="zodiaque"value="verseaux">   Verseaux : 21/01 au 19/02</li>
+                    <li><input type="checkbox"name="zodiaque"value="poissons">   Poissons : 20/02 au 20/03</li>
+                    </ul>
+                    <ul id="ascend"><p>quel est votre ascendant ?</p><br>
+                        <li><input type="checkbox"name="ascendant"value="belier">   Belier </li>
+                        <li><input type="checkbox"name="ascendant"value="taureau">   Taureau </li>
+                        <li><input type="checkbox"name="ascendant"value="gemeaux">   Gémeaux </li>
+                        <li><input type="checkbox"name="ascendant"value="cancer">   Cancer </li>
+                        <br>
+                        <li><input type="checkbox"name="ascendant"value="lion">   Lion </li>
+                        <li><input type="checkbox"name="ascendant"value="vierge">   Vierge </li>
+                        <li><input type="checkbox"name="ascendant"value="balance">   Balance </li>
+                        <li><input type="checkbox"name="ascendant"value="scorpion">   Scorpion </li>
+                        <br> 
+                        <li><input type="checkbox"name="ascendant"value="sagittaire">   Sagittaire </li>
+                        <li><input type="checkbox"name="ascendant"value="capricorne">   Capricorne </li>
+                        <li><input type="checkbox"name="ascendant"value="verseaux">   Verseaux </li>
+                        <li><input type="checkbox"name="ascendant"value="poissons">   Poissons </li>
+                     </ul>
+                     <input type="button" value="voir mon signe "id="voirmonsigne" />             
+                     <p id="monsigne"></p>
+                    </section> 
+                    <div class="clear"></div>
+
+             <footer>
+             <p class= "quizz"> 
+             <small>2020 tout droit reservés.</small>
+             <span class="etoile">***</span>quizz astro<span class="etoile">***</span>
+             </p>
+             </footer>
+       
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+           
+            function getXMLHttpRequest()
+{
+var xhr = null;
+if (window.XMLHttpRequest || window.ActiveXObject) {
+if (window.ActiveXObject) {
+try {
+xhr = new ActiveXObject("Msxml2.XMLHTTP");
+} catch(e) {
+xhr = new ActiveXObject("Microsoft.XMLHTTP");
+}
+} else {
+xhr = new XMLHttpRequest();
+}
+} else {
+alert("Votre navigateur ne supporte pas l'objet XMLHTTPRequest...");
+return null;
+}
+return xhr;
+}
+function request(callback)
+{
+var xhr = getXMLHttpRequest(); /* declare une variable = recupere les données */
+xhr.onreadystatechange = function() { /* permet de definir une fonction, instruction de traitement de reponse*/
+if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {/*la fonction oneready statechange
+ est appele contient le status xmlhttprequest 4 = requete 
+finit et reponse prete status= 200ok status= 0 demande non initialisé */
+callback(xhr.responseXML);/*fonction de rappel pour obtenir des données de reponse sous forme xml*/
+}
+};
+xhr.open("GET", "zodiaque.xml", true);/*demande au serveur de manière asynchrome le fichier puisque c open c true*/
+xhr.send(null);/*envoie de requete null pour commande get*/
+}
+const button= document.getElementById("voirmonsigne");
+button.addEventListener('click',event => {
+request(readData);
+
+}
+
+);
+
+
+
+function readData(oData) {
+ /*     lit la donnée (partage de donnée)   */
+var output = ""
+/* output represente un conteneur dans lequel un site ou une application peut injecter le resultat d'un calcul ou d'une application*/
+var zodiaque = oData.getElementsByTagName("zodiaque");
+/*           =  partage données retourne la liste des noms zodiaque */
+document.getElementById("monsigne").innerHTML = ""
+/* monsigne= output*/
+radio=document.getElementsByName("zodiaque");
+/* mon input = nom zodiaque */
+var monsigne;
+
+for (i=0;i<radio.length;i++)
+/* je parcours mon tableau */
+
+{
+monsigne = radio[i].checked
+        /* case cocher */
+if (monsigne) {
+    /* si la case cocher */
+namesigne = radio[i].value
+          /* case cocher */
+var name = zodiaque[i].getAttribute("name") /*recupere le name,la date,imgurl, description*/
+var date = zodiaque[i].getAttribute("date")
+var img_url = zodiaque[i].getAttribute("imgurl")
+var description = zodiaque[i].getAttribute("description")
+output += name + " " + date + "<br>" + description +"<br>"
+/* conteneur concatene name + "" + date+description */
+
+}
+}
+
+
+
+document.getElementById("monsigne").innerHTML+=output
+
+
+
+}
+  </script>
+
+
+</body>
+
+</html>

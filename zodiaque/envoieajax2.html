@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+             <meta charset = "utf-8">
+                <title>quizz2</title>
+                  <link rel="stylesheet"type="text/css" href="envoiajax.css">
+                    </head>
+                        <body>
+                            <header>
+                                <div class= "pois">
+                                    <h2><span class="moi">***</span>quizz astro<span class="moi">***</span></h2>
+                                    <nav>
+                                        <ul>
+                                        <li><a href="envoieajax4.html">horoscope</a></li>
+                                        <li><a href="envoieajax.html">acceuil</a></li>
+                                        <li><a href="envoieajax3.html">contact</a></li>
+                                        </ul>
+                                        </nav>    
+                                   </div>
+
+                                </header>
+
+                                <h3>
+                                  <p id="titrequizznum"  CHOISIR UN CHIFFRE >PROFIL NUMEROLOGIQUE <br><br>
+
+                                      choississez un chiffre :
+                                  </p><br>
+                                <p id="quizznum">
+                                 <input type="radio" value='un' name="reponse1" checked> 1
+                                 <input type="radio" value='deux' name="reponse1"> 2
+                                 <input type="radio" value='trois' name="reponse1"> 3
+                                 <input type="radio" value='quatre' name="reponse1"> 4
+                                 <input type="radio" value='cinq' name="reponse1"> 5
+                                 <input type="radio" value='six' name="reponse1"> 6
+                                 <input type="radio" value='sept' name="reponse1"> 7
+                                 <input type="radio" value='huit' name="reponse1"> 8
+                                 <input type="radio" value='neuf' name="reponse1"> 9
+                                 </p>
+                                 <br>  
+     <h3>
+                              <p><input type="button" value="voir votre réponse" id="score"></p>
+                              <br><br>
+ 
+ <p id ="un" class="cacher">                                  
+Le chiffre 1
+
+Personnalité : Le nombre 1 est lié à un fort esprit de décision et d’initiative,
+ il est le début de quelque chose, l’énergie qui engendre la...
+<br></p> 
+<p id ="deux"class="cacher">
+Le chiffre 2
+
+Personnalité : Le nombre 2 représente la dualité, l’échange et la confrontation.
+ Vous avez donc sans doute de très bonnes capacités à unir,...
+ <br></p> 
+<p id ="trois"class="cacher">
+Le chiffre 3
+
+Le nombre 3 représente l’équilibre, l’expression de soi et l’esprit libre-penseur. 
+Vous possédez sans doute une grande facilité à communiquer,...
+<br></p>
+<p id ="quatre"class="cacher">
+Le chiffre 4
+
+Personnalité : Le nombre 4 symbolise une réalisation concrète, les fondations et la matière.
+ Vous possédez sans doute de très bonnes capacités...
+<br></p>
+<p id ="cinq"class="cacher">
+
+Le chiffre 5
+
+Le nombre 5 représente le souffle de vie et l‘épanouissement.
+Vous êtes sans doute une personne très indépendante, mobile, libre et voyageuse....
+<br></p>
+<p id ="six"class="cacher">
+
+Le chiffre 6
+
+Personnalité : Le nombre 6 symbolise la féminité, la beauté, l’amour et la famille.
+ Il se dégage de vous une belle harmonie, et un équilibre...
+<br></p>
+<p id ="sept"class="cacher">
+Le chiffre 7
+
+Personnalité : Le nombre 7 représente la maîtrise de l’esprit sur la matière et du spirituel sur le matériel.
+ Il influence la réflexion, l’analyse...
+<br></p>
+<p id ="huit"class="cacher">
+Le chiffre 8
+
+Personnalité : Le nombre 8 symbolise le pouvoir, la justice et l’expansion. À travers une personnalité,
+ il donne une grande force d’accomplissement...
+<br></p>
+<p id ="neuf"class="cacher">
+Le chiffre 9
+
+Personnalité : Le nombre 9 est la marque de l’accomplissement final, de l’universel,
+ il permet d’ouvrir les horizons et d’élever les consciences,...
+</p>
+</h3>
+
+              
+         <footer class= "quizz2"> 
+         <small>2020 tout droit reservés.</small>
+        <span class="etoile">***</span>quizz astro<span class="etoile">***</span>
+        </footer>
+        <script>
+
+     const button=document.getElementById("score");
+     button.addEventListener("click",event => {
+
+        var choix = document.getElementsByName("reponse1")
+
+        for(i=0; i<choix.length;i++)
+
+        {
+            var val = choix[i].value
+            var tmtp = document.getElementById(val)
+            if (choix[i].checked)
+
+             {
+                
+                tmtp.className="pascacher"
+
+            }
+            else
+            {
+                tmtp.className='cacher'
+            }
+
+        }
+
+
+     })
+
+    function calcul_somme(radio, score)
+    {
+    for (var i=0; i<radio.length;i++)
+    {
+    valeur = parseInt( radio[i].value );
+    score += radio[i].checked * valeur
+    }
+    return score
+    }
+      document.getElementsByNames("reponse1").value;
+      var un=document.getElementById("un").innerHTML;  
+      var un=document.getElementById("deux").innerHTML; 
+      var un=document.getElementById("trois").innerHTML; 
+      var un=document.getElementById("quatre").innerHTML;  
+      var un=document.getElementById("cinq").innerHTML; 
+      var un=document.getElementById("six").innerHTML; 
+      var un=document.getElementById("sept").innerHTML;  
+      var un=document.getElementById("huit").innerHTML; 
+      var un=document.getElementById("neuf").innerHTML; 
+
+ </script>
+      </body>
+          </html>

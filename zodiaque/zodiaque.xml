@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- XMLHttpRequest_getXML.xml -->
+<root>
+<zodiaque name= "belier" date = " 21/04 au 20/05" imgurl = "" description= "Anxieux, impatient, entêté et opiniâtre 
+le Bélier a besoin d'action, de s'extérioriser et d'affirmer haut et fort sa personnalité ! Enthousiaste et optimiste
+ il manque parfois de concentration et de discernement, il évalue mal les obstacles ce qui fait qu'il s'emballe vite 
+ et se décourage tout aussi vite... Ema Fontayne, astrologue, nous dresse le portrait du Bélier, 
+ vous allez vous reconnaître !" />
+<zodiaque name= "taureau" date = "21/04 au 20/05" imgurl = "" description= "Le Taureau aspire avant toute chose à 
+vivre une vie tranquille, le confort matériel le rassure. Simple et naturel ce signe de terre profite des joies
+ et des petits plaisirs sains de la vie. Sentimental, fidèle, conservateur, dévoué et un poil égocentrique
+  le Taureau fuit les complications et l'agitation. Découvrez son profil astrologique." />
+<zodiaque name= "gemeaux" date = "21/05 au 21/06" imgurl = "" description= "Le Gémeaux se cherche, il est sans cesse 
+en quête de son identité. C'est un individu animé par une intense curiosité qui l'ouvre au monde extérieur.
+ Sympathique, sociable, communicatif et intelligent il s'adapte à toutes les situations.
+  Il est sensible à tous les courants de pensées mais reste subjectif et narcissique." />
+<zodiaque name= "cancer" date = " 22/06 au 22/07" imgurl = "" description= "Le Cancer est un individu ultra sensible.
+ Il baigne souvent dans la nostalgie du passé et de sa petite enfance notamment.
+  C'est une personne douce, tendre, réceptive, intuitive et affectueuse qui a besoin d'être entourée,
+   protégée et sécurisée. Elle est parfois nonchalante et indolente..." />
+<zodiaque name= "lion" date = "23/07 au 22/08" imgurl = "" description= "Le Lion rayonne de nature, il a besoin de 
+régner sur son milieu et exerce une constante maîtrise de lui-même. Généreux, chaleureux, autoritaire, orgueilleux, 
+exigeant et parfois même intransigeant il se montre exclusif dans toutes ses relations." />
+<zodiaque name= "vierge" date = " 23/09 au 22/09" imgurl = "" description= "Les Vierges sont le plus souvent tournées
+ vers elles-même, elles s'interrogent énormément ce qui implique parfois un repliement sur soi. Elles étudient,
+  analysent, mesurent, calculent et sélectionnent méthodiquement tout ce qu'elles font. Reines de l'organisation 
+  et de l'autocritique elles ont besoin d'ordre et d'organisation. Elles ont besoin de se sentir utiles." />
+<zodiaque name= "balance" date = " 23/09 au 22/10" imgurl = "" description= "Sans cesse en quête d'harmonie et
+ d'équilibre la Balance a besoin d'évoluer dans un contexte harmonieux et équilibré. Que ce soit en famille,
+  en amour ou au travail elle recherche toujours le juste milieu, la bonne mesure. Son souhait le plus cher ? 
+  Instaurer des rapports sereins avec son entourage et toujours faire le meilleur choix !" />
+<zodiaque name= "scorpion" date = "23/10 au 22/11" imgurl = "" description= "Le Scorpion est à la fois passionné et
+ plein de sang-froid. Il s'exprime avec passion dans une quête constante d'anti-conformisme et un désir violent
+  d'aller au fond des choses et jusqu'au bout des situations. Il y a toujours un riche potentiel de créativité 
+  chez les natifs de ce signe. Chacun d'entre eux en fera ensuite bon ou mauvais usage." />
+<zodiaque name= "sagittaire" date = " 23/11 au 21/12" imgurl = "" description= "Le Sagittaire est enthousiaste, gai, 
+optimiste, chaleureux et généreux. Il a besoin de laisser sa joyeuse personnalité s'épanouir. Serein, optimiste et
+ parfois aventureux il est toujours en quête de son bonheur. Jovial, ingénu et plein de bonne volonté il a une très
+  nette tendance à fuir les complications." />
+<zodiaque name= "capricorne" date = "22/12 au 20/01" imgurl = "" description= "Né entre le 22 décembre et
+ le 19 janvier, le Capricorne adopte souvent une attitude défensive et sceptique. Prudent, défiant, patient et tenace,
+  il s'impose une sorte de distanciation lucide par rapport aux autres. Il ne fait confiance à personne. Stoïque,
+   pourvu d'un grand pouvoir de concentration et d'un redoutable esprit de synthèse, chez lui c'est la raison qui prime. Il ne s'abandonne pas facilement." />
+<zodiaque name= "verseaux" date = "21/01 au 19/02" imgurl = "" description= "Né entre le 20 janvier et le 19 février,
+ le Verseau est très indépendant, il aspire à se détacher de son milieu et des principes qui lui ont été inculqués
+  pour planter ses propres racines, créer ses valeurs et affirmer sa liberté de penser et d'agir. Original, 
+  non conformiste, opportuniste, curieux et changeant il est capable de s'adapter à toutes les situations. 
+  Découvrez le portrait astrologique du Verseau, réalisé par notre astrologue, Ema Fontayne." />
+<zodiaque name= "poissons" date = "20/02 au 20/03" imgurl = "" description= "Le Poissons est un signe astrologique 
+tantôt inhibé tantôt stimulé par d'intenses remous émotionnels. C'est une personne inspirée, sensible, sensuelle, 
+réceptive et imaginative qui aspire à la fusion affective ou spirituelle. Une soif d'absolu l'anime au quotidien et le
+ rend généreux jusqu'à l'abnégation. Il est cependant souvent tourmenté par son anxiété. Ema Fontayne, astrologue,
+  nous dit tout sur ce signe d'Eau." />
+</root>
+
+
+ 
